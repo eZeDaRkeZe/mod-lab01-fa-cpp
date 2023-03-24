@@ -12,8 +12,7 @@ unsigned int faStr1(const char* str) {
         }
         if (str[i] != ' ') {
             haveSpace = false;
-        }
-        else {
+        } else {
             if (isCorrect && !haveSpace) {
                 Words++;
             }
@@ -39,14 +38,12 @@ unsigned int faStr2(const char* str) {
                 notCorrect = true;
             }
             isFirst = false;
-        }
-        else {
+        } else {
             if (str[i] != ' ') {
                 if (str[i] < 'a' || str[i] > 'z') {
                     notCorrect = true;
                 }
-            }
-            else {
+            } else {
                 if (!notCorrect) {
                     ++words;
                 }
