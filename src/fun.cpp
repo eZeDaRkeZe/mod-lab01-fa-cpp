@@ -14,8 +14,8 @@ unsigned int faStr1(const char* str) {
             haveSpace = false;
         }
         else {
-            if (!isCorrect && haveSpace) {
-                ++Words;
+            if (isCorrect && !haveSpace) {
+                Words++;
             }
             haveSpace = true;
             isCorrect = true;
